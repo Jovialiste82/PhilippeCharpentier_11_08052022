@@ -1,0 +1,15 @@
+.footer-text-container {
+  width: 100vw;
+  background-color: black;
+  text-align: center;
+  color: white;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer-logo {
+  height: 37px;
+  color: white;
+}

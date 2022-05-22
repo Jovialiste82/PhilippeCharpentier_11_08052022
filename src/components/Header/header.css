@@ -1,0 +1,24 @@
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding-top: 2rem;
+}
+
+.header-logo {
+  height: 37px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.navItem {
+  margin: 10px;
+  color: var(--main-color-1);
+  text-decoration: none;
+  font-family: sans-serif;
+}

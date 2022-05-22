@@ -1,0 +1,49 @@
+.accordion-content ul,
+.accordion-content p {
+  margin: 0;
+  padding: 1rem;
+  color: var(--main-color-1);
+}
+
+.accordion-content ul li {
+  list-style: none;
+}
+
+.accordion-content {
+  background-color: var(--main-color-2);
+  border-radius: 10px;
+}
+
+.accordion-title {
+  background-color: var(--main-color-1);
+  border-radius: 10px;
+  height: 52px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.accordion-on {
+  display: block;
+}
+
+.accordion-off {
+  display: none;
+}
+
+.chevron {
+  width: 1rem;
+  height: 1rem;
+  border-bottom: 2px white solid;
+  border-left: 2px white solid;
+}
+
+.chevron-up {
+  transform: rotateZ(-225deg);
+}
+
+.chevron-down {
+  transform: rotateZ(-45deg);
+}
