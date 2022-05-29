@@ -1,8 +1,8 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import "./accomodation.css";
-import Error from "../../components/Error/Error.jsx";
 import Accordion from "../../components/Accordions/Accordion";
+import Carousel from "../../components/Carousel/Carousel";
 
 const Accomodation = ({ accomodations }) => {
   let { id } = useParams();
@@ -15,9 +15,7 @@ const Accomodation = ({ accomodations }) => {
 
   return accomodation ? (
     <main>
-      <div className='accomodation-banner'>
-        <img src={accomodation.cover} alt='' />
-      </div>
+      <Carousel pictures={accomodation.pictures} />
       <div className='accomodation-all-info'>
         <div className='accomodation-all-info-1'>
           <div className='accomodation-info-title'>{accomodation.title}</div>
@@ -60,7 +58,7 @@ const Accomodation = ({ accomodations }) => {
       </div>
     </main>
   ) : (
-    <Error />
+    <Navigate replace to='/errorpage' />
   );
 };
 

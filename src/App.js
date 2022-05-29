@@ -38,7 +38,7 @@ function App() {
               path='/accomodation/:id'
               element={<Accomodation accomodations={accomodations} />}
             />
-            <Route path='/accomodation/*' element={<ErrorPage />} />
+            <Route path='/errorpage' element={<ErrorPage />} />
             <Route path='/*' element={<ErrorPage />} />
           </Routes>
         </BrowserRouter>

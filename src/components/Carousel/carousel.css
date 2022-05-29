@@ -1,0 +1,33 @@
+.accomodation-banner {
+  height: 415px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.accomodation-banner img {
+  height: 415px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 25px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 200px;
+  width: 30px;
+  height: 30px;
+  border-left: 6px solid white;
+  border-bottom: 6px solid white;
+  cursor: pointer;
+}
+
+.carousel-btn-left {
+  left: 30px;
+  transform: rotateZ(45deg);
+}
+
+.carousel-btn-right {
+  right: 30px;
+  transform: rotateZ(225deg);
+}
