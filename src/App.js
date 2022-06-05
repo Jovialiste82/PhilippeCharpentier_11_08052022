@@ -14,6 +14,7 @@ function App() {
   const getAccomodations = async () => {
     const response = await fetch("data/accomodation.json");
     const data = await response.json();
+    if (!data) return;
     console.log(data.accomodations);
     setAccomodations(data.accomodations);
     localStorage.setItem("accomodations", data.accomodations);
