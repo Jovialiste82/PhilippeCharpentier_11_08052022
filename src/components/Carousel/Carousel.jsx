@@ -34,6 +34,9 @@ const Carousel = ({ pictures }) => {
         className='carousel-btn carousel-btn-right'
         onClick={handleRightBtn}
       ></span>
+      <span className='carousel-slide-indicator'>
+        {activeIndex + 1}/{gallery.length}
+      </span>
     </div>
   );
 };
